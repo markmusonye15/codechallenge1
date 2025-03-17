@@ -8,35 +8,41 @@
   </head>
   <body>
     <h1>Ramen Rating App</h1>
-    <div id="ramen-menu"></div>
+    <section id="ramen-menu" class="ramen-menu"></section>
 
-    <div id="ramen-detail">
-      <h2 id="ramen-name">Select a Ramen</h2>
-      <p id="ramen-restaurant">Restaurant:</p>
-      <img id="ramen-image" src="images/gyukotsu.jpg" alt="Ramen Image" />
+    <div id="ramen-detail" class="ramen-detail">
+      <h2 class="ramen-name">Select a Ramen</h2>
+      <p class="ramen-restaurant" id="ramen-restaurant">Restaurant:</p>
+      <img class="ramen-image" id="ramen-image" src="images/gyukotsu.jpg" alt="Ramen Image" />
       <img src="images/kojiro.jpg" alt="Ramen Image" />
       <img src="images/naruto.jpg" alt="Ramen Image" />
       <img src="images/nirvana.jpg" alt="Ramen Image" />
       <img src="images/shoyu.jpg" alt="Ramen Image" />
-      <p>Rating: <span id="ramen-rating"></span></p>
-      <p>Comment: <span id="ramen-comment"></span></p>
+      <p class="ramen-rating">Rating: <span id="ramen-rating"></span></p>
+      <p class="ramen-comment">Comment: <span id="ramen-comment"></span></p>
     </div>
-
-    <form id="new-ramen-form">
-      <h3>Add New Ramen</h3>
-      <input type="text" id="name" placeholder="Ramen Name" required />
-      <input type="text" id="restaurant" placeholder="Restaurant" required />
-      <input type="text" id="image" placeholder="Image URL" required />
-      <input
-        type="number"
-        id="rating"
-        placeholder="Rating"
-        min="1"
-        max="10"
-        required
-      />
-      <textarea id="comment" placeholder="Comment"></textarea>
-      <button type="submit">Add Ramen</button>
-    </form>
+</section>
+<section class="new-ramen-section">
+    <h3>Add New Ramen</h3>
+    <form id="new-ramen" class="new-ramen">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Ramen Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="restaurant" placeholder="Restaurant" required />
+      </div>
+ <div class="form-group"> <input type="text" id="image" placeholder="Image URL" required />
+</div>
+     
+       <div class="form-group">
+          <input type="number" id="new-rating" placeholder="Rating (1-10)" min="1" max="10" required />
+        </div>
+        <div class="form-group">
+          <textarea id="new-comment" placeholder="Comment"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Add Ramen</button>
+      </form>
+    </section>
+ <script src="index.js"></script>
   </body>
 </html>
