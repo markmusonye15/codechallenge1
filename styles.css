@@ -39,6 +39,18 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
+.ramen-rating {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f1eded;
+  margin-bottom: 20px;
+}
+.ramen-comment {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f1eded;
+  margin-bottom: 20px;
+}
 .new-ramen-section {
   margin-top: 30px;
   padding: 20px;
